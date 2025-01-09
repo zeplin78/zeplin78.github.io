@@ -932,3 +932,22 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+      width: 100%; /* Make the container width responsive */
+      padding: 20px; /* Add padding */
+  }
+
+  .navbar {
+      display: flex;
+      flex-direction: column; /* Stack navbar items vertically */
+  }
+
+  .section {
+      margin-bottom: 20px; /* Adjust section spacing */
+  }
+}
