@@ -4,6 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.container {
+  width: 90%; /* Adjusts width relative to the viewport */
+  margin: 0 auto; /* Centers the container */
+}
+
 
 html {
   scroll-behavior: smooth;
