@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  height: auto;
 }
 .container {
   width: 90%; /* Adjusts width relative to the viewport */
@@ -951,3 +952,101 @@ footer span a:hover {
       margin-bottom: 20px; /* Adjust section spacing */
   }
 }
+
+/* Mobile styles for portfolio website */
+@media (max-width: 768px) {
+  /* General reset */
+  body {
+    font-size: 14px;
+  }
+
+  .max-width {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 100;
+  }
+
+  nav .menu li {
+    margin: 10px 0;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-content .text-1, 
+  .home-content .text-2, 
+  .home-content a {
+    font-size: 20px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-content .column img {
+    width: 100%;
+    height: auto;
+  }
+
+  .serv-content {
+    flex-direction: column;
+  }
+
+  .serv-content .card {
+    margin: 15px 0;
+  }
+
+  .skills-content {
+    flex-direction: column;
+  }
+
+  .skills-content .column {
+    width: 100%;
+  }
+
+  .bars .info span {
+    font-size: 14px;
+  }
+
+  .contact .description {
+    text-align: center;
+  }
+
+  .social-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
