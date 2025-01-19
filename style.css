@@ -933,25 +933,6 @@ footer span a:hover {
     line-height: 38px;
   }
 }
-@media (max-width: 768px) {
-  body {
-      font-size: 16px; /* Adjust font size for smaller screens */
-  }
-
-  .container {
-      width: 100%; /* Make the container width responsive */
-      padding: 20px; /* Add padding */
-  }
-
-  .navbar {
-      display: flex;
-      flex-direction: column; /* Stack navbar items vertically */
-  }
-
-  .section {
-      margin-bottom: 20px; /* Adjust section spacing */
-  }
-}
 
 /* Mobile styles for portfolio website */
 @media (max-width: 768px) {
@@ -1050,3 +1031,122 @@ footer span a:hover {
   }
 }
 
+@media (max-width: 320px) {
+  /* General reset */
+  body {
+    font-size: 12px; /* Reduced font size for small screens */
+  }
+
+  .max-width {
+    width: 95%; /* Reduce container width for better fitting */
+    margin: 0 auto;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 100;
+  }
+
+  nav .menu li {
+    margin: 5px 0; /* Reduced spacing for menu items */
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-content .text-1, 
+  .home-content .text-2, 
+  .home-content a {
+    font-size: 16px; /* Smaller font size for headings and links */
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content .column {
+    width: 100%;
+    margin-bottom: 15px; /* Reduced margin for tight spacing */
+  }
+
+  .about-content .column img {
+    width: 100%;
+    height: auto;
+  }
+
+  .serv-content {
+    flex-direction: column;
+  }
+
+  .serv-content .card {
+    margin: 10px 0; /* Reduced margin for smaller spacing */
+  }
+
+  .skills-content {
+    flex-direction: column;
+  }
+
+  .skills-content .column {
+    width: 100%;
+  }
+
+  .bars .info span {
+    font-size: 12px; /* Smaller font for additional text */
+  }
+
+  .contact .description {
+    text-align: center;
+    font-size: 12px; /* Smaller font for descriptions */
+  }
+
+  .social-menu ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for icons */
+    justify-content: center;
+    gap: 8px; /* Reduced gap for tight spacing */
+  }
+
+  footer {
+    text-align: center;
+    font-size: 10px; /* Reduced font size for footer text */
+  }
+  .card {
+    max-width: 95%; /* Use most of the screen width */
+    padding: 10px; /* Reduce padding for a tighter layout */
+    margin: 15px auto; /* Adjust margin for smaller devices */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .card .box i {
+    font-size: 24px; /* Reduce icon size */
+    margin-bottom: 8px; /* Tighter spacing below the icon */
+  }
+
+  .card .box .text {
+    font-size: 16px; /* Adjust title size for smaller screens */
+    margin-bottom: 8px; /* Reduce spacing */
+  }
+
+  .card .box p {
+    font-size: 12px; /* Smaller font for descriptions */
+    line-height: 1.4; /* Adjust line height for better readability */
+    color: #666; /* Maintain contrast */
+  }
+}
